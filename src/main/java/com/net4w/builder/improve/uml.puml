@@ -1,0 +1,32 @@
+@startuml
+House --* HouseBuilder
+HouseBuilder --o HouseDirect
+CommonHouseBuilder --|> HouseBuilder
+HighBuildingHouseBuilder --|> HouseBuilder
+Client .. HouseDirect
+Client .. CommonHouseBuilder
+Client .. HighBuildingHouseBuilder
+
+class Client
+class CommonHouseBuilder
+class HighBuildingHouseBuilder
+class HouseDirect {
+    {field} houseBuilder ：HouseBuilder
+}
+
+
+
+class House {
+
+}
+
+class HouseBuilder{
+  {field} house ：House = new House()
+  {method} #void buildBasic()
+  #void buildWall()
+  #void roofed()
+  +House build()
+}
+
+
+@enduml
