@@ -15,7 +15,7 @@ public class Client {
         final PeanutSoyaMilk peanutSoyaMilk = new PeanutSoyaMilk();
         peanutSoyaMilk.make();
         // 制作纯豆浆
-        System.out.println("========= 开始制作纯豆浆 =========");
+        System.out.println ("========= 开始制作纯豆浆 =========");
         final PureSoyaMilk pureSoyaMilk = new PureSoyaMilk();
         pureSoyaMilk.make();
     }
