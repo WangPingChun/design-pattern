@@ -1,7 +1,5 @@
 package com.net4w.interpreter;
 
-import com.google.common.primitives.Chars;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
